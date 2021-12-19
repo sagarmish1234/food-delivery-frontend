@@ -3,12 +3,14 @@ import '../css/carousel.css'
 // import Image1 from '../images/carousel-image1.jpg'
 import Image2 from '../images/carousel-image2.jpg'
 import Image3 from '../images/carousel-image3.jpg'
+import apiUrl from "../apiUrl"
+
 
 function Carousel() {
   const [carouselImages, setCarouselImages] = useState([])
   var [dataFound, setDataFound] = useState([])
   useEffect(async () => {
-    fetch('/api/carousel/get_carousel', {
+    fetch(apiUrl+'/api/carousel/get_carousel', {
       method: 'GET',
       headers: {
         Accept: 'application/json',

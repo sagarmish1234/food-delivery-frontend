@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import '../css/timeline.css'
+import apiUrl from "../apiUrl"
+
 function Timeline() {
   const [timelines, setTimelines] = useState([])
 
   useEffect(() => {
-    fetch('/api/timeline/get_events', {
+    fetch(apiUrl+'/api/timeline/get_events', {
       method: 'GET',
       headers: {
         Accept: 'application/json',

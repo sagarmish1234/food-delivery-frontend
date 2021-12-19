@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import '../css/register.css'
 import { useNavigate } from 'react-router-dom'
+import apiUrl from "../apiUrl"
+
 export default function Register() {
   const [user, setUser] = useState({
     designation: '',
@@ -21,7 +23,7 @@ export default function Register() {
   const navigate = useNavigate()
   const Submit = (e) => {
     e.preventDefault()
-    fetch('/api/users/register', {
+    fetch(apiUrl+'/api/users/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

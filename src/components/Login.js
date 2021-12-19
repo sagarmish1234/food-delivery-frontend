@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { currentUser } from '../App'
 import { useContext } from 'react'
+import apiUrl from "../apiUrl"
 
 
 export default function Login() {
@@ -20,7 +21,7 @@ export default function Login() {
   }
   const Submit = (e) => {
     e.preventDefault()
-    fetch('/api/users/login', {
+    fetch(apiUrl+'/api/users/login', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
