@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 40px;
+  column-gap: 5px;
+  row-gap: 30px;
+  justify-content: center;
+  width: 100%;
+  width: 1100px;
+  margin: auto;
+  /* padding-right: 50px; */
+  /* padding-left: 50px; */
+  /* ff 3.6+ */
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  background-color: red;
+  margin: auto;
+  text-align: justify;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+.card-image {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-content {
+  padding: 10px;
+  margin: 0px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.card-author {
+  text-align: right;
+  font-style: italic;
+}
+.card-background {
+  background: -moz-linear-gradient(
+    132deg,
+    rgba(184, 7, 107, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    132deg,
+    rgba(184, 7, 107, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    132deg,
+    rgba(184, 7, 107, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#B8076B', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    132deg,
+    rgba(184, 7, 107, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    132deg,
+    rgba(184, 7, 107, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );    
+  padding-bottom: 30px;
+}
